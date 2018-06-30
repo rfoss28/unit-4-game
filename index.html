@@ -1,21 +1,61 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystals Collector!</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="jumbotron">
         <h1>Crystals Collector!</h1>
+
         <p>You will be given a random number at the start of the game</p>
-        <p>Ther are four crystals below. By click on a crystal you will add a specific amount of points to your total score</p>
-        <p>You win the game by matching your total score to random number, you lose the game if your total score goes ablve the random number</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score</p>
+        <p>You win the game by matching your total score to random number, you lose the game if your total score goes ablve
+            the random number</p>
         <p>The value of each crystal is hidden from you until you click on it</p>
         <p>Each time when the game starts the game will change the values of each crystal.</p>
-    
-        <script src="./assets/javascript/game.js" 
-        async defer></script>
-    </body>
+    </div>
+
+    <!-- Start of display for buttons and score -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div id="player-score" class="p-3 mb-2 bg-primary text-white">player-score Score</div>
+            </div>
+            <div class="col-sm-3 col-lg-2">
+                    <div id="wins" class="p-3 mb-2 bg-success text-white">Wins</div>
+                </div>
+        <div class="col-sm-3 col-lg-2">
+                <div id="losses" class="p-3 mb-2 bg-danger text-white">Losses</div>
+            </div>
+    </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-8">
+                <img id="blueCrystal" src="assets/images/blue_crystal.jpg" class="rounded" width="150" height="150">
+                <img id="greenCrystal" src="assets/images/greencrystal.png" class="rounded" width="150" height="150">
+                <img id="redCrystal" src="assets/images/redcrystal.png" class="rounded" width="150" height="150">
+                <img id="yellowCrystal" src="assets/images/yellow crystal.jpg" class="rounded" width="150" height="150">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div id="computer-score" class="p-3 mb-2 bg-info text-white">Computer Score</div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/javascript/game.js" async defer></script>
+</body>
+
 </html>
